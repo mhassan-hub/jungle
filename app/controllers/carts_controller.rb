@@ -1,6 +1,7 @@
 class CartsController < ApplicationController
 
   def show
+    @cart ||= cookies[:cart].present? ? JSON.parse(cookies[:cart]) : {}
   end
 
   def add_item
