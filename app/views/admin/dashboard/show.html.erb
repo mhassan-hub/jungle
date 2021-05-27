@@ -1,3 +1,23 @@
 <h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
 
+
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr class="success">
+        <th colspan="2">Entity</th>
+        <th>Count</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr class="info">
+      <th colspan="2">Product</th>
+      <th><%= @products %></th>
+    </tr>
+    <tr class="info">
+      <th colspan="2">Category</th>
+      <th><%= @categories %></th>
+    </tr>
+    </tbody>
+  </table>
+</div>
