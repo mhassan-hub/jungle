@@ -22,7 +22,6 @@
           
           <ul class="dropdown-menu">
             <% Category.all.each do |category| %>
-              <%= debug(category) %>
               <li><%= link_to category.name, category %></li>
             <% end %>
           </ul>

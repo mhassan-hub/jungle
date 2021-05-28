@@ -13,14 +13,17 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th colspan="2">Category</th>
-          <th>Price</th>
-          <th>Qty Remaining</th>
-          <th></th>
+          <th> Category</th>
+          <th>Number of Items</th>
         </tr>
       </thead>
       <tbody>
-        <%= render @category %>
+      <% @categories.each do |category| %>
+        <tr>
+          <td> <%= category.name %> </td>
+          <td> <%= category.products.count %> </td>
+        </tr> 
+          <% end %>
       </tbody>
     </table>
 
