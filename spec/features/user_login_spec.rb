@@ -24,7 +24,7 @@ RSpec.feature "UserLogins", type: :feature, js: true do
       end
     end
 
-    scenario "They can click on a product to see more product details" do
+    scenario "User can log in" do
       # ACT
       visit root_path
 
